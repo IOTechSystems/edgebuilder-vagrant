@@ -37,4 +37,7 @@ Vagrant.configure("2") do |config|
 
   # Enable ssh forward agent
   config.ssh.forward_agent = true
+  
+  # The time in seconds that Vagrant will wait for the machine to boot
+  config.vm.boot_timeout = 600
 end
