@@ -1,0 +1,32 @@
+{
+  "NodeConfig": [
+    {
+      "name": "vEdge1",
+      "description": "virtual node 1",
+      "nodeaddress": "192.168.33.11",
+      "username": "vagrant",
+      "password": "vagrant",
+      "serveraddress": "192.168.33.10",
+      "groups": []
+    },
+    {
+      "name": "vEdge2",
+      "description": "virtual node 2",
+      "nodeaddress": "192.168.33.12",
+      "username": "vagrant",
+      "password": "vagrant",
+      "serveraddress": "192.168.33.10",
+      "groups": []
+    },
+    {
+      "name": "vEdge3",
+      "description": "virtual node 3",
+      "nodeaddress": "192.168.33.13",
+      "username": "vagrant",
+      "password": "vagrant",
+      "serveraddress": "192.168.33.10",
+      "groups": []
+    }
+  ]
+}
+
