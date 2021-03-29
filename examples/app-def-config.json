@@ -1,0 +1,9 @@
+{
+  "AppDefinitionConfig": [
+    {
+      "Name": "SimpleWebServer",
+      "Description": "Node docker-compose appDefinition",
+      "ComposeFile": "/vagrant/examples/docker-compose.yaml"
+    }
+  ]
+}

@@ -20,3 +20,7 @@ sudo apt-get update
 # Install edgebuilder node components
 apt-get install -y /vagrant/edgebuilder-node-2.0.0_amd64.deb
 
+# Required to run a simple webserver for App Definition
+mkdir /home/vagrant/src
+echo "I am edge $HOSTNAME" > /home/vagrant/src/index.html
+
