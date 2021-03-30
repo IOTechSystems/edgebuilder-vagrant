@@ -4,6 +4,6 @@ services:
     simple-webserver:
         image: nginx
         ports:
-            - 8000:80
+            - 8888:80
         volumes:
             - /home/vagrant/src:/usr/share/nginx/html
