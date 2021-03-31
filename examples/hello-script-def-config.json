@@ -1,0 +1,9 @@
+{
+  "ScriptDefinitionConfig": [
+    {
+      "Name": "Hello",
+      "Description": "Example script definition to print Hello World",
+      "ScriptFile": "/vagrant/examples/hello.py"
+    }
+  ]
+}

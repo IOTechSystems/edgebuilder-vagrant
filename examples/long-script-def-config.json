@@ -1,0 +1,9 @@
+{
+  "ScriptDefinitionConfig": [
+    {
+      "Name": "LongRunning",
+      "Description": "Example script definition to run a long computation",
+      "ScriptFile": "/vagrant/examples/long.py"
+    }
+  ]
+}
