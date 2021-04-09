@@ -18,7 +18,7 @@ echo "deb http://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest focal main" | 
 sudo apt-get update
 
 # Install edgebuilder node components
-apt-get install -y /vagrant/edgebuilder-node-0.9.0-dev_amd64.deb
+apt-get install -y /vagrant/edgebuilder-node-0.9.0_amd64.deb
 
 # Required to run a simple webserver for App Definition
 mkdir /home/vagrant/src
