@@ -15,8 +15,8 @@ apt-get install -y docker-compose
 sudo apt-get update
 
 # Install edgebuilder server components
-apt-get install -y /vagrant/edgebuilder-server-2.0.0_amd64.deb
+apt-get install -y /vagrant/edgebuilder-server-0.9.0_amd64.deb
 
 # Install edgebuilder cli
-apt-get install -y /vagrant/edgebuilder-cli-2.0.0_amd64.deb
+apt-get install -y /vagrant/edgebuilder-cli-0.9.0_amd64.deb
 

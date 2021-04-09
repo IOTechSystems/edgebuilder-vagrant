@@ -13,9 +13,9 @@ This repo holds Vagrant script to create and provision a number of VMs (based on
       - `$ cd edgebuilder-vagrant`
    - By default, Vagrant shares your project directory (the one containing the Vagrantfile) to the `/vagrant` directory in VM machines. 
      Ensure you have copy of Edge Builder `Ubuntu 20.04` packages inside the Vagrant project directory:
-      - `./edgebuilder-server-2.0.0_amd64.deb`
-      - `./edgebuilder-cli-2.0.0_amd64.deb`
-      - `./edgebuilder-node-2.0.0_amd64.deb`
+      - `./edgebuilder-server-0.9.0_amd64.deb`
+      - `./edgebuilder-cli-0.9.0_amd64.deb`
+      - `./edgebuilder-node-0.9.0_amd64.deb`
 
 ## Create the VMs using Vagrant
    - To bring the VMs up: 
