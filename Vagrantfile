@@ -5,49 +5,49 @@
 BASE_IMAGE = "bento/ubuntu-20.04"
 
 # Number of (Edge) nodes
-node_count = 1  
+node_count = 1
 if ENV['NODE_COUNT']
-  node_count = ENV['NODE_COUNT'].to_i  
+  node_count = ENV['NODE_COUNT'].to_i
 end
 
 VAGRANTFILE_API_VERSION = "2"
-Vagrant.configure(VAGRANTFILE_API_VERSION) do |config| 
-  
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+
   # Create a master node
   config.vm.define "master" do |subconfig|
     # Set base image
-    subconfig.vm.box = BASE_IMAGE  
-    
+    subconfig.vm.box = BASE_IMAGE
+
     # Set hostname
     subconfig.vm.hostname = "master"
-    
+
     # Setting up private_network to have virtual host
     subconfig.vm.network :private_network, ip: "192.168.33.10"
-    
+
     # Provision VMs using a provision (shell) script
     subconfig.vm.provision :shell, path: "master-bootstrap.sh"
   end
-  
+
   # Create 'n' (Edge) nodes
   (1..node_count).each do |i|
     config.vm.define "node#{i}" do |subconfig|
       # Set base image
-      subconfig.vm.box = BASE_IMAGE  
-    
+      subconfig.vm.box = BASE_IMAGE
+
       # Set hostname
       subconfig.vm.hostname = "node#{i}"
-    
+
       # Setting up private_network to have virtual host
       subconfig.vm.network :private_network, ip: "192.168.33.#{i + 10}"
-    
+
       # Provision VMs using a provision (shell) script
-      subconfig.vm.provision :shell, path: "node-bootstrap.sh"    
+      subconfig.vm.provision :shell, path: "node-bootstrap.sh"
     end
   end
-  
+
   # Enable SSH forward agent
   config.ssh.forward_agent = true
-  
+
   # The time (in sec) that Vagrant will wait for the machine to boot
-  config.vm.boot_timeout = 600
+  config.vm.boot_timeout = 1200
 end
