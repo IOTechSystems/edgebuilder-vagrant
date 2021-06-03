@@ -12,10 +12,12 @@ This repo holds Vagrant script to create and provision a number of VMs (based on
       - `$ git clone https://github.com/IOTechSystems/edgebuilder-vagrant.git`
       - `$ cd edgebuilder-vagrant`
    - By default, Vagrant shares your project directory (the one containing the Vagrantfile) to the `/vagrant` directory in VM machines. 
-     Ensure you have copy of Edge Builder `Ubuntu 20.04` packages inside the Vagrant project directory:
-      - `./edgebuilder-server-0.9.0_amd64.deb`
-      - `./edgebuilder-cli-0.9.0_amd64.deb`
-      - `./edgebuilder-node-0.9.0_amd64.deb`
+     Download the Edge Builder install script from [here](https://github.com/IOTechSystems/edgebuilder-installer/blob/master/edgebuilder-install.sh) 
+     And copy over the `edgebuilder-install.sh` file inside the Vagrant project directory:
+      - `edgebuilder-vagrant/edgebuilder-install.sh`
+     
+     **Note** - The version of Edge Builder installed is hardcoded in the install script. So ensure you checj
+     out the correct version of install script.
 
 ## Create the VMs using Vagrant
    - To bring the VMs up: 
@@ -23,7 +25,7 @@ This repo holds Vagrant script to create and provision a number of VMs (based on
    - SSH nodes using vagrant CLI: 
       - `$ vagrant ssh master`
       - `$ vagrant ssh node1`
-   - You could also SSH the nodes from your host machine using the deafult username/password `vagrant/vagrant`:
+   - You could also SSH the nodes from your host machine using the default username/password `vagrant/vagrant`:
       - `$ ssh vagrant@192.168.33.10  # master`
       - `$ ssh vagrant@192.168.33.11  # node1`
    - To bring the VMs down: 
