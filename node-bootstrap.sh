@@ -6,12 +6,13 @@ export DEBIAN_FRONTEND=noninteractive
 apt-get install -y net-tools
 
 # Required to install SaltStack
-wget -q -O - https://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add -
+wget -q -O - https://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add >/dev/null 2>&1
 echo "deb http://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest focal main" | sudo tee -a /etc/apt/sources.list.d/saltstack.list
 apt-get update
 
 # Install edgebuilder node components
-. /vagrant/edgebuilder-install.sh node
+wget -q -O - https://github.com/IOTechSystems/edgebuilder-installer/archive/refs/tags/v0.9.1.tar.gz | tar xvz -C /vagrant/
+. /vagrant/edgebuilder-installer-0.9.1/edgebuilder-install.sh node
 
 # Add vagrant to docker group
 usermod -aG docker vagrant
