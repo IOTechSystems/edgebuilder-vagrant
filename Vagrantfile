@@ -3,6 +3,7 @@
 #
 # Vagrant box available: https://app.vagrantup.com/bento/boxes/ubuntu-20.04
 BASE_IMAGE = "bento/ubuntu-20.04"
+BOX_VERSION = "202012.23.0"
 
 # Number of (Edge) nodes
 node_count = 1  
@@ -16,7 +17,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # Create a master node
   config.vm.define "master" do |subconfig|
     # Set base image
-    subconfig.vm.box = BASE_IMAGE  
+    subconfig.vm.box = BASE_IMAGE
+    subconfig.vm.box_version = BOX_VERSION
     
     # Set hostname
     subconfig.vm.hostname = "master"
@@ -32,7 +34,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   (1..node_count).each do |i|
     config.vm.define "node#{i}" do |subconfig|
       # Set base image
-      subconfig.vm.box = BASE_IMAGE  
+      subconfig.vm.box = BASE_IMAGE
+      subconfig.vm.box_version = BOX_VERSION
     
       # Set hostname
       subconfig.vm.hostname = "node#{i}"
@@ -49,5 +52,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
   
   # The time (in sec) that Vagrant will wait for the machine to boot
-  config.vm.boot_timeout = 600
+  config.vm.boot_timeout = 1200
 end
