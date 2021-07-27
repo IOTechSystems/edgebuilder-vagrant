@@ -1,0 +1,12 @@
+version: "3"
+
+volumes:
+  web_config:
+
+services:
+    simple-webserver:
+        image: nginx
+        ports:
+            - 55555:80
+        volumes:
+            - web_config:/usr/share/nginx/html
