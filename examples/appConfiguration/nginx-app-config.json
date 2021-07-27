@@ -1,0 +1,17 @@
+{
+  "AppConfig": [
+    {
+      "Name": "NginxConfig",
+      "Description": "config to inject into the nginx container",
+      "AppDefinitionID": "b26aa20d-b0f9-4272-b8f9-bb91b3b18a1c",
+      "ConfigMappings": [
+        {
+          "Volume": "web_config",
+          "AppConfigFiles": [
+            "website"
+          ]
+        }
+      ]
+    }
+  ]
+}
