@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-VER=1.1.0
+VER=$1
 export DEBIAN_FRONTEND=noninteractive
 
 # Install ifconfig
