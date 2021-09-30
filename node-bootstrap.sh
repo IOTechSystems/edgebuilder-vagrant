@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+VER=$1
 export DEBIAN_FRONTEND=noninteractive
 
 # Install ifconfig
@@ -11,8 +11,8 @@ echo "deb http://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest focal main" | 
 apt-get update
 
 # Install edgebuilder node components
-wget -q -O - https://github.com/IOTechSystems/edgebuilder-installer/archive/refs/tags/v1.1.3.tar.gz | tar xvz -C /vagrant/
-. /vagrant/edgebuilder-installer-1.1.3/edgebuilder-install.sh node
+wget -q -O - https://github.com/IOTechSystems/edgebuilder-installer/archive/refs/tags/v${VER}.tar.gz | tar xvz -C /vagrant/
+. /vagrant/edgebuilder-installer-${VER}/edgebuilder-install.sh node
 
 # Add vagrant to docker group
 usermod -aG docker vagrant

@@ -4,6 +4,7 @@
 # Vagrant box available: https://app.vagrantup.com/bento/boxes/ubuntu-20.04
 BASE_IMAGE = "bento/ubuntu-20.04"
 BOX_VERSION = "202012.23.0"
+EB_COMPONENT_VER = "1.1.3"
 
 # Number of (Edge) nodes
 node_count = 1  
@@ -25,9 +26,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     
     # Setting up private_network to have virtual host
     subconfig.vm.network :private_network, ip: "192.168.33.10"
-    
+
     # Provision VMs using a provision (shell) script
-    subconfig.vm.provision :shell, path: "master-bootstrap.sh"
+    config.vm.provision "shell" do |s|
+      s.path = "master-bootstrap.sh"
+      s.args   = EB_COMPONENT_VER
+    end
   end
   
   # Create 'n' (Edge) nodes
@@ -44,7 +48,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       subconfig.vm.network :private_network, ip: "192.168.33.#{i + 10}"
     
       # Provision VMs using a provision (shell) script
-      subconfig.vm.provision :shell, path: "node-bootstrap.sh"    
+      config.vm.provision "shell" do |s|
+        s.path = "node-bootstrap.sh"
+        s.args   = EB_COMPONENT_VER
+      end
     end
   end
   
