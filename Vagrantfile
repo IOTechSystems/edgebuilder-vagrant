@@ -30,7 +30,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     # Provision VMs using a provision (shell) script
     config.vm.provision "shell" do |s|
       s.path = "master-bootstrap.sh"
-      s.args   = ["#{EB_COMPONENT_VER}"]
+      s.args   = EB_COMPONENT_VER
     end
   end
   
@@ -50,7 +50,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       # Provision VMs using a provision (shell) script
       config.vm.provision "shell" do |s|
         s.path = "node-bootstrap.sh"
-        s.args   = ["#{EB_COMPONENT_VER}"]
+        s.args   = EB_COMPONENT_VER
       end
     end
   end
