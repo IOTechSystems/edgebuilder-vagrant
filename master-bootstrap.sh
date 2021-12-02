@@ -1,17 +1,18 @@
 #!/usr/bin/env bash
 VER=$1
+CREDS=$2
 export DEBIAN_FRONTEND=noninteractive
 
+if [ $CREDS != "" ]; then
+  CREDS="-r $CREDS"
+fi
 # Install ifconfig
 apt-get install -y net-tools
 apt-get update
 
 # Install edgebuilder server components
-wget -q -O - https://github.com/IOTechSystems/edgebuilder-installer/archive/refs/tags/v${VER}.tar.gz | tar xvz -C /vagrant/
-. /vagrant/edgebuilder-installer-${VER}/edgebuilder-install.sh server
+sudo sh -c 'wget -O - https://raw.githubusercontent.com/IOTechSystems/edgebuilder-installer/'"$VER"'/edgebuilder-install.sh | sh -s - server '"$CREDS"
 
-# Add vagrant to docker group
-usermod -aG docker vagrant
 
 # Install edgebuilder cli
-. /vagrant/edgebuilder-installer-${VER}/edgebuilder-install.sh cli
+sudo sh -c 'wget -O - https://raw.githubusercontent.com/IOTechSystems/edgebuilder-installer/'"$VER"'/edgebuilder-install.sh | sh -s - cli '"$CREDS"

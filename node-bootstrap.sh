@@ -1,21 +1,16 @@
 #!/usr/bin/env bash
 VER=$1
+CREDS=$2
 export DEBIAN_FRONTEND=noninteractive
 
+if [ $CREDS != "" ]; then
+  CREDS="-r $CREDS"
+fi
 # Install ifconfig
 apt-get install -y net-tools
 
-# Required to install SaltStack
-wget -q -O - https://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest/SALTSTACK-GPG-KEY.pub | sudo apt-key add >/dev/null 2>&1
-echo "deb http://repo.saltstack.com/py3/ubuntu/20.04/amd64/latest focal main" | sudo tee -a /etc/apt/sources.list.d/saltstack.list
-apt-get update
-
-# Install edgebuilder node components
-wget -q -O - https://github.com/IOTechSystems/edgebuilder-installer/archive/refs/tags/v${VER}.tar.gz | tar xvz -C /vagrant/
-. /vagrant/edgebuilder-installer-${VER}/edgebuilder-install.sh node
-
-# Add vagrant to docker group
-usermod -aG docker vagrant
+# Install edgebuilder server components
+sudo sh -c 'wget -O - https://raw.githubusercontent.com/IOTechSystems/edgebuilder-installer/'"$VER"'/edgebuilder-install.sh | sh -s - node '"$CREDS"
 
 # Required to run a simple webserver for App Definition
 mkdir /home/vagrant/src
