@@ -3,7 +3,7 @@ VER=$1
 CREDS=$2
 export DEBIAN_FRONTEND=noninteractive
 
-if [ $CREDS != "" ]; then
+if [ "$CREDS" != "" ]; then
   CREDS="-r $CREDS"
 fi
 # Install ifconfig
