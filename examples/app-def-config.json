@@ -3,7 +3,9 @@
     {
       "Name": "SimpleWebServer",
       "Description": "Node docker-compose appDefinition",
-      "ComposeFile": "/vagrant/examples/docker-compose.yaml"
+      "FilePath": "/vagrant/examples/docker-compose.yaml",
+      "Type": "docker-compose",
+      "Labels": ["appLabel1","appLabel2"]
     }
   ]
 }

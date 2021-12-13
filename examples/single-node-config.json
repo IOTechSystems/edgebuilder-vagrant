@@ -1,14 +1,13 @@
 {
   "NodeConfig": [
-    {
-      "name": "node1",
-      "description": "virtual node 1",
-      "nodeaddress": "192.168.33.11",
-      "username" : "vagrant",
-      "password" : "vagrant",
-      "serveraddress": "192.168.33.10",
-      "groups" : []
-    }
+      {
+          "name": "node1",
+          "description": "virtual node 1",
+          "nodeaddress": "192.168.33.11",
+          "username" : "vagrant",
+          "password" : "vagrant",
+          "serveraddress": "192.168.33.10",
+          "labels" : ["label1", "label2"]
+      }
   ]
 }
-

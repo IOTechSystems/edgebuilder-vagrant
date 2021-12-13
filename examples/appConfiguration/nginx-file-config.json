@@ -4,7 +4,7 @@
       "Name": "website",
       "Description": "a file to configure the web output",
       "FileName": "index.html",
-      "FileContents": "/vagrant/examples/appConfiguration/index.html"
+      "FilePath": "/vagrant/examples/appConfiguration/index.html"
     }
   ]
 }
