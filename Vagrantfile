@@ -34,7 +34,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     subconfig.vm.hostname = "master"
 
     # Setting up private_network to have virtual host
-    subconfig.vm.network :private_network, ip: "192.168.33.10"
+    subconfig.vm.network :private_network, ip: "192.168.56.10"
 
     # Provision VMs using a provision (shell) script
     subconfig.vm.provision "shell" do |s|
@@ -54,7 +54,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       subconfig.vm.hostname = "node#{i}"
 
       # Setting up private_network to have virtual host
-      subconfig.vm.network :private_network, ip: "192.168.33.#{i + 10}"
+      subconfig.vm.network :private_network, ip: "192.168.56.#{i + 10}"
 
       # Provision VMs using a provision (shell) script
       subconfig.vm.provision "shell" do |s|
