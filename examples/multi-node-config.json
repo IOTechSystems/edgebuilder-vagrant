@@ -3,28 +3,28 @@
     {
       "name": "node1",
       "description": "virtual node 1",
-      "nodeaddress": "192.168.33.11",
+      "nodeaddress": "192.168.56.11",
       "username": "vagrant",
       "password": "vagrant",
-      "serveraddress": "192.168.33.10",
+      "serveraddress": "192.168.56.10",
       "groups": []
     },
     {
       "name": "node2",
       "description": "virtual node 2",
-      "nodeaddress": "192.168.33.12",
+      "nodeaddress": "192.168.56.12",
       "username": "vagrant",
       "password": "vagrant",
-      "serveraddress": "192.168.33.10",
+      "serveraddress": "192.168.56.10",
       "groups": []
     },
     {
       "name": "node3",
       "description": "virtual node 3",
-      "nodeaddress": "192.168.33.13",
+      "nodeaddress": "192.168.56.13",
       "username": "vagrant",
       "password": "vagrant",
-      "serveraddress": "192.168.33.10",
+      "serveraddress": "192.168.56.10",
       "groups": []
     }
   ]
