@@ -26,7 +26,7 @@ This repo holds Vagrant script to create and provision a number of VMs (based on
       - `$ vagrant ssh master`
       - `$ vagrant ssh node1`
    - You could also SSH the nodes from your host machine using the default username/password `vagrant/vagrant`:
-      - `$ ssh vagrant@192.168.33.10  # master`
-      - `$ ssh vagrant@192.168.33.11  # node1`
+      - `$ ssh vagrant@192.168.56.10  # master`
+      - `$ ssh vagrant@192.168.56.11  # node1`
    - To bring the VMs down: 
       - `$ vagrant destroy -f`
