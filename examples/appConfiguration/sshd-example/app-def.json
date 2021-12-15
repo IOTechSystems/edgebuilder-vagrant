@@ -1,0 +1,11 @@
+{
+  "AppDefinitionConfig": [
+    {
+      "Name": "AppDefinitionSystemd1",
+      "Description": "An example app definition (systemd)",
+      "FilePath": "/vagrant/examples/appConfiguration/sshd-example/systemd-conf.json",
+      "Type": "systemd"
+    }
+  ]
+}
+

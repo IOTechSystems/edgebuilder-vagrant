@@ -1,0 +1,10 @@
+{
+  "AppConfigFileConfig": [
+    {
+      "Name": "temporaryFile",
+      "Description": "a file which to configure the systemd daemon",
+      "FileName": "temporary.txt",
+      "FilePath": "/vagrant/examples/appConfiguration/sshd-example/config.txt"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "service_name": "sshd",
+  "config_paths": [
+    "/opt"
+  ]
+}
+

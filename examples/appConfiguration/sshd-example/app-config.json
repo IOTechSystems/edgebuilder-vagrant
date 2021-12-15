@@ -1,0 +1,17 @@
+{
+  "AppConfig": [
+    {
+      "Name": "sshdConfig",
+      "Description": "Configuration for sshd",
+      "AppDefinitionID": "b4d46ab4-f699-462f-844f-8c128c77a3a8",
+      "ConfigMappings": [
+        {
+          "Destination": "/opt",
+          "AppConfigFiles": [
+            "temporaryFile"
+          ]
+        }
+      ]
+    }
+  ]
+}
