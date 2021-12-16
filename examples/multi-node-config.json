@@ -7,7 +7,7 @@
       "username": "vagrant",
       "password": "vagrant",
       "serveraddress": "192.168.56.10",
-      "groups": []
+      "labels" : ["label1"]
     },
     {
       "name": "node2",
@@ -16,7 +16,7 @@
       "username": "vagrant",
       "password": "vagrant",
       "serveraddress": "192.168.56.10",
-      "groups": []
+      "labels" : ["label1"]
     },
     {
       "name": "node3",
@@ -25,7 +25,7 @@
       "username": "vagrant",
       "password": "vagrant",
       "serveraddress": "192.168.56.10",
-      "groups": []
+      "labels" : ["label1"]
     }
   ]
 }
