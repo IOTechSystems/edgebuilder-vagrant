@@ -7,7 +7,6 @@
       "username": "vagrant",
       "password": "vagrant",
       "serveraddress": "192.168.56.10",
-      "serveraddress": "192.168.33.10"
     },
     {
       "name": "node2",
