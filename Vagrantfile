@@ -4,7 +4,7 @@
 # Vagrant box available: https://app.vagrantup.com/bento/boxes/ubuntu-20.04
 BASE_IMAGE = "bento/ubuntu-20.04"
 BOX_VERSION = "202012.23.0"
-EB_COMPONENT_VER = "1.2.0"
+EB_COMPONENT_VER = "v1.2.0"
 EB_REPO_CREDS = ""
 
 # Number of (Edge) nodes
