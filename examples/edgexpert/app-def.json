@@ -3,7 +3,7 @@
     {
       "Name": "chemical-tank-demo-node1",
       "Description": "Chemical Tank Control Demo Deployment for Node1",
-      "FilePath": "/vagrant/examples/edgeexpert/node1/docker-compose.yml",
+      "FilePath": "/vagrant/examples/edgexpert/node1/docker-compose.yml",
       "Type": "docker-compose"
     }
   ]
