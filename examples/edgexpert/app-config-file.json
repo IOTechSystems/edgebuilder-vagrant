@@ -1,0 +1,34 @@
+{
+  "AppConfigFileConfig": [
+    {
+      "Name": "license-data-file",
+      "Description": "a file to configure license",
+      "FileName": "license.lic",
+      "FilePath": "/vagrant/examples/edgeexpert/licenses/<edgexpert-license-here>"
+    },
+    {
+      "Name": "app-service-config",
+      "Description": "a file to configure app-influxdb",
+      "FileName": "asc-config.tar",
+      "FilePath": "/vagrant/examples/edgeexpert/node1/app-service/asc-config.tar"
+    },
+    {
+      "Name": "node1-provision-data",
+      "Description": "files to provision device profiles, devices, and nodered flow on node1",
+      "FileName": "node1-provision-data.tar",
+      "FilePath": "/vagrant/examples/edgeexpert/node1/provision-data/node1-provision-data.tar"
+    },
+    {
+      "Name": "device-ChemicalTankConfig",
+      "Description": "The configuration for the modbus device",
+      "FileName": "device-ChemicalTank.json",
+      "FilePath": "/vagrant/examples/edgeexpert/node1/devices/device-ChemicalTank.json"
+    },
+    {
+      "Name": "device-OutletValve",
+      "Description": "The configuration for the opc-ua device",
+      "FileName": "device-OutletValve.json",
+      "FilePath": "/vagrant/examples/edgeexpert/node1/devices/device-OutletValve.json"
+    }
+  ]
+}

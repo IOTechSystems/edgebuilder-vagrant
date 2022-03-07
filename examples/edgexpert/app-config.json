@@ -1,0 +1,36 @@
+{
+  "AppConfig": [
+    {
+      "Name": "node1-config",
+      "Description": "edgexpert volumes",
+      "AppDefinitionID": "7cf9b503-f82a-4a1f-b9f3-f6fa81c673f1",
+      "ConfigMappings": [
+        {
+          "Destination": "license-data",
+          "AppConfigFiles": [
+            "license-data-file"
+          ]
+        },
+        {
+          "Destination": "asc-config",
+          "AppConfigFiles": [
+            "app-service-config"
+          ]
+        },
+        {
+          "Destination": "provision-data",
+          "AppConfigFiles": [
+            "node1-provision-data"
+          ]
+        },
+        {
+          "Destination": "device-files",
+          "AppConfigFiles": [
+            "device-ChemicalTankConfig",
+            "device-OutletValve"
+          ]
+        }
+      ]
+    }
+  ]
+}
