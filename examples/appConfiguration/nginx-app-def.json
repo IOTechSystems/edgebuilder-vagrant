@@ -1,10 +1,11 @@
 {
   "AppDefinitionConfig": [
     {
-      "Name": "SimpleWebServer-Config",
+      "Name": "SimpleWebServer",
       "Description": "A simple web server",
       "FilePath": "/vagrant/examples/appConfiguration/docker-compose.yml",
-      "Type": "docker-compose"
+      "Type": "docker-compose",
+      "Labels": ["appLabel1","appLabel2"]
     }
   ]
 }
