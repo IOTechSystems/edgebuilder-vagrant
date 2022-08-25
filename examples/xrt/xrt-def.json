@@ -1,0 +1,6 @@
+{
+  "service_name": "xrt",
+  "config_paths": [
+    "/opt/iotech/xrt/2.0/deployment/config"
+  ]
+}

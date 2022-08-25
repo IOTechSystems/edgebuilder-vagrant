@@ -2,9 +2,8 @@
   "ScriptDefinitionConfig": [
     {
       "Name": "Hello",
-      "Description": "Example script definition to print Hello World",
-      "ScriptFile": "/vagrant/examples/hello.py",
-      "Labels": ["scriptDef_label1", "scriptDef_label2"]
+      "Description": "Example script",
+      "ScriptFile": "hello.py"
     }
   ]
 }
