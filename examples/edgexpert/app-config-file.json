@@ -10,25 +10,27 @@
       "Name": "app-service-config",
       "Description": "a file to configure app-influxdb",
       "FileName": "asc-config.tar",
-      "FilePath": "/vagrant/examples/edgexpert/node1/app-service/asc-config.tar"
+      "FilePath": "/vagrant/examples/edgexpert/app-service/asc-config.tar",
+      "Extract": true
     },
     {
       "Name": "node1-provision-data",
       "Description": "files to provision device profiles, devices, and nodered flow on node1",
       "FileName": "node1-provision-data.tar",
-      "FilePath": "/vagrant/examples/edgexpert/node1/provision-data/node1-provision-data.tar"
+      "FilePath": "/vagrant/examples/edgexpert/provision-data/node1-provision-data.tar",
+      "Extract": true
     },
     {
       "Name": "device-ChemicalTankConfig",
       "Description": "The configuration for the modbus device",
       "FileName": "device-ChemicalTank.json",
-      "FilePath": "/vagrant/examples/edgexpert/node1/devices/device-ChemicalTank.json"
+      "FilePath": "/vagrant/examples/edgexpert/devices/device-ChemicalTank.json"
     },
     {
       "Name": "device-OutletValve",
       "Description": "The configuration for the opc-ua device",
       "FileName": "device-OutletValve.json",
-      "FilePath": "/vagrant/examples/edgexpert/node1/devices/device-OutletValve.json"
+      "FilePath": "/vagrant/examples/edgexpert/devices/device-OutletValve.json"
     }
   ]
 }

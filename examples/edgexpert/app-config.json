@@ -3,7 +3,7 @@
     {
       "Name": "node1-config",
       "Description": "edgexpert volumes",
-      "AppDefinitionID": "7cf9b503-f82a-4a1f-b9f3-f6fa81c673f1",
+      "AppTemplateID": "724b6dce-da4a-4640-95e0-33a5ca4b1c3c",
       "ConfigMappings": [
         {
           "Destination": "license-data",
