@@ -1,0 +1,9 @@
+{
+    "ScriptDefinitionConfig": [
+      {
+        "Name": "install-xrt",
+        "Description": "A script to install xrt",
+        "ScriptFile": "xrt-install.sh"
+      }
+    ]
+  }

@@ -1,14 +1,16 @@
 {
   "NodeConfig": [
-      {
-          "name": "node1",
-          "description": "virtual node 1",
-          "nodeaddress": "192.168.56.11",
-          "nodesshport": "22",
-          "username" : "vagrant",
-          "password" : "vagrant",
-          "serveraddress": "192.168.56.10",
-          "labels" : ["label1", "label2"]
+    {
+      "Name": "node1",
+      "Description": "virtual node 1",
+      "Labels" : ["node_label1", "node_label2"],
+      "SSHDetails": {
+        "NodeAddress":  "192.168.56.11",
+        "NodeSSHPort": "22",
+        "Username" : "vagrant",
+        "Password" : "vagrant",
+        "ServerAddress": "192.168.56.10"
       }
+    }
   ]
 }

@@ -1,0 +1,19 @@
+{
+    "AppConfig": [
+      {
+        "Name": "xrt-config",
+        "Description": "xrt config",
+        "AppTemplateID": "128f7978-baf4-4d28-91b2-30767c729407",
+        "ConfigMappings": [
+          {
+            "Destination": "/opt/iotech/xrt/2.0/deployment/config",
+            "AppConfigFiles": [
+              "license",
+              "xrt-virtual-config"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

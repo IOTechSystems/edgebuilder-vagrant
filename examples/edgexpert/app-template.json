@@ -1,0 +1,11 @@
+{
+  "AppTemplateConfig": [
+    {
+      "Name": "chemical-tank-demo-node1",
+      "Description": "Chemical Tank Control Demo Deployment for Node1",
+      "FilePath": "/vagrant/examples/edgexpert/docker-compose.yml",
+      "Type": "docker-compose",
+      "Arch": ["x86_64"]
+    }
+  ]
+}

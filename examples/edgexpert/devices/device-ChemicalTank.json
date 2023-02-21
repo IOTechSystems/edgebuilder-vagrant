@@ -7,7 +7,7 @@
       "operatingState":"UP",
       "protocols":{
         "modbus-tcp":{
-          "Address":"<your-simulator-ip>",
+          "Address":"10.0.0.45",
           "Port":"502",
           "UnitID":"1"
         }
