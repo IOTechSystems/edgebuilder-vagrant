@@ -1,0 +1,17 @@
+{
+    "AppConfigFileConfig": [
+      {
+        "Name": "license",
+        "Description": "a license file",
+        "FileName": "license.json",
+        "FilePath": "/vagrant/examples/xrt/license.json"
+      },
+      {
+        "Name": "xrt-virtual-config",
+        "Description": "Xrt config for the virtual device service",
+        "FileName": "xrt-virtual-config.tar.gz",
+        "FilePath": "/vagrant/examples/xrt/xrt-virtual-config.tar.gz",
+        "Extract": true
+      }
+    ]
+  }

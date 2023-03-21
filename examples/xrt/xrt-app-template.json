@@ -1,0 +1,12 @@
+{
+    "AppTemplateConfig": [
+      {
+        "Name": "xrt",
+        "Description": "An xrt deployment",
+        "FilePath": "xrt-def.json",
+        "Type": "systemd",
+        "Arch": ["x86_64"]
+      }
+    ]
+  }
+  

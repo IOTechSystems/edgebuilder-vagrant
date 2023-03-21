@@ -7,7 +7,7 @@
       "operatingState":"UP",
       "protocols":{
         "OPC-UA":{
-          "Address":"<your-simulator-ip>:53530/OPCUA/SimulationServer"
+          "Address":"10.0.0.45:53530/OPCUA/SimulationServer"
         }
       },
       "serviceName":"device-opc-ua",
