@@ -11,7 +11,7 @@ apt-get install -y net-tools
 apt-get update
 
 # Install edgebuilder server components
-sudo sh -c 'wget -O - https://raw.githubusercontent.com/IOTechSystems/edgebuilder-installer/'"$VER"'/edgebuilder-install.sh | sh -s - server '"$CREDS"
+sudo sh -c 'wget -O - https://raw.githubusercontent.com/IOTechSystems/edgebuilder-installer/'"$VER"'/edgebuilder-install.sh | sh -s - server --install-docker'"$CREDS"
 
 
 # Install edgebuilder cli
